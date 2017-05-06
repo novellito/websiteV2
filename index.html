@@ -12,6 +12,8 @@
     <!-- Optional theme -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp"
         crossorigin="anonymous">
+    
+    <link href="https://fonts.googleapis.com/css?family=Space+Mono" rel="stylesheet">
 
     <!--<link rel="stylesheet" href="css/loading.css">-->
     <link rel="stylesheet" type="text/css" href="css/typeContent.css">
@@ -20,13 +22,13 @@
     <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.css">
     <link rel="stylesheet" type="text/css" href="css/content.css">
 
-    <title>Novellito</title>
+    <title>Christian Trinidad</title>
 </head>
 
 <body>
 
 
-    <div id="loading">
+    <!--<div id="loading">
         <div id="loading-center">
             <div id="loading-center-absolute">
                 <div class="object" id="object_four"></div>
@@ -35,63 +37,67 @@
                 <div class="object" id="object_one"></div>
             </div>
         </div>
-    </div>
+    </div>-->
 
 
 
     <header id="aboutMe">
         <nav>
             <a href="#about">About</a>
-            <a href="#work">Work Experience</a>
-            <a href="#education">Education</a>
+            <a href="#projects">Projects</a>
             <a href="#contact">Contact</a>
         </nav>
 
-
-        <!--todo
-http://fontawesome.io/icon/github-alt/
-http://fontawesome.io/icon/file/
-http://fontawesome.io/icon/linkedin-square/
-http://fontawesome.io/icon/github/-->
-
-
         <div id="particles-js"></div>
-        
+
         <div class="container">
             <img class="img-circle me" alt="Christian Trinidad" src="img/me.jpg" />
             <h1 class="myName">Hello World!</h1>
         </div>
 
 
-        <h1 class="myName">I'm
-            <div id="typed-strings" style="display: none;">
+        <h1 class="myName inner">I'm
+            <!--<div id="typed-strings" style="display: none;">
                 <h1 class="myName">My name is Christian Trinidad</h1>
-            </div>
-            <span id="typed"></span>
-
+            </div>-->
+            <span id="typed" ></span>
+            <h1 class="hideContent myDesc">| Web Developer | Student | Nerd |</h1>
         </h1>
 
         <div class="personalLinks">
-            <i id="circle" class="fa fa-github-alt" aria-hidden="true"></i>
-            <i id="circle" class="fa fa-file" aria-hidden="true"></i>
-            <i id="circle" class="fa fa-linkedin-square" aria-hidden="true"></i>
+            <a href="#"><i class="fa fa-github-alt social-ink" aria-hidden="true" 
+            data-toggle="tooltip" data-placement="top" title = "View my GitHub"></i></a>
+            <a href="#"><i class="fa fa-file social-ink" aria-hidden="true"
+            data-toggle="tooltip" data-placement="top" title = "View my Resume"></i></a>
+            <a href="https://www.linkedin.com/in/christian-trinidad07/"><i class="fa fa-linkedin-square social-ink" aria-hidden="true"
+            data-toggle="tooltip" data-placement="top" title = "View my LinkedIn"></i></a>
         </div>
+
 
         <div class="logoCenter">
             <i class="fa fa-angle-double-down " aria-hidden="true"></i>
         </div>
-
     </header>
 
+    <section id="skills">   
 
+        <h1>Skills | Tools </h1>
+
+    </section>
 
 
     <script src="js/jquery-3.2.1.min.js"></script>
     <!--<script>
     $(window).on('load',function() {
         $("#loading").fadeOut(2000);
-    });-->
+    });
+    </script>-->
+    <script>
+        $(function(){
+            $('[data-toggle="tooltip"]').tooltip();  
+        });
     </script>
+    
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
         crossorigin="anonymous"></script>
     <!--<script src="js/parallax.js"></script>-->

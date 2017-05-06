@@ -3,7 +3,8 @@ document.addEventListener('DOMContentLoaded', function(){
             strings: [" a web developer.", "a student.", "a nerd.", 
             " Christian Trinidad"],
             typeSpeed: 40,
-            backDelay: 500,
+            startDelay:500,
+            backDelay: 500, //how long before deleting text
             loop: false,
             contentType: 'html', // or text
             // defaults to null for infinite loop
@@ -19,4 +20,7 @@ document.addEventListener('DOMContentLoaded', function(){
         }
     });
     function newTyped(){ /* A new typed object */ }
-    function foo(){ console.log("Callback"); }
+    function foo(){ 
+       $('.hideContent').delay(3800).addClass('reveal');
+    
+     }
