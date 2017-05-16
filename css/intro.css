@@ -1,4 +1,17 @@
-
+html, body {margin:0;padding:0;height:100%;}
+#aboutMe{
+    margin-top:20px;
+    width: 100%;
+    height: 100%;
+}
+/*consider removing overlay*/
+.overlay {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background: rgba(0, 0, 0, 0.4);
+    z-index: -10;
+}
 .me {
     box-shadow: none;
     border: 4px solid #fff;
@@ -6,7 +19,6 @@
     margin: auto;
     margin-top: 90px;
     height:300px;
-    
 }
 
 .img-circle{
@@ -41,7 +53,6 @@ nav {
     top: 0;
     width: 100%;
     height: 7%;
-    /*z-index: 100;*/
 }
 
 nav a {
@@ -58,26 +69,22 @@ nav a:hover{
     color:white;
 }
 
+.logoCenter{
+    text-align: center;
+    margin-top:25px;
+}
 
 .fa-angle-double-down{
     font-size:100px;
     display: inline-block;
-    /*margin-left: auto;
-    margin-right:auto;*/
-}
-.logoCenter{
-    text-align: center;
-    margin-top:25px;
     cursor: pointer;
+    margin-top: 75px;
     
 }
-/*.fa-angle-double-down:hover{
-    cursor:pointer;
-}*/
 
 .personalLinks i{
     font-size:100px;
-    margin-left: 50x;
+    margin-left: 70x;
     margin-right: 50px;
     margin-top:50px;
     color:white;
@@ -87,10 +94,9 @@ nav a:hover{
     padding-left:40px;
 }
 
-.personalLinks i:hover{
+.personalLinks i:hover, .logoCenter i:hover{
     color:#0088cc;
 }
-
 
 .hideContent {
     opacity: 0;
@@ -109,3 +115,4 @@ nav a:hover{
 .myDesc{
         text-shadow: 0 0 0.313em #fff, 0 0 0.625em #fff;
 }
+
