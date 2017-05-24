@@ -18,12 +18,18 @@
     <!--<link rel="stylesheet" href="css/loading.css">-->
     <link rel="stylesheet" type="text/css" href="css/typeContent.css">
     <link rel="stylesheet" type="text/css" href="css/particles.css">
-    <link rel="stylesheet" type="text/css" href="css/main.css" />
     <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.css">
     <link rel="stylesheet" type="text/css" href="css/intro.css">
     <link rel="stylesheet" type="text/css" href="css/skills.css">
     <link rel="stylesheet" type="text/css" href="css/contact-form.css">
     <link rel="stylesheet" type="text/css" href="css/abouts.css">
+    <link rel="stylesheet" type="text/css" href="css/main.css" />
+    <link rel="stylesheet" type="text/css" href="css/skills.css" />
+    <!--<link rel="stylesheet" type="text/css" href="websitev2\font-awesome-4.7.0\css\font-awesome.min.css">-->
+    <link rel="stylesheet" type="text/css" href="devicon.css">
+
+    <!--  if you want colored versions -->
+    <link rel="stylesheet" type="text/css" href="devicon-colors.css">
 
     <title>Christian Trinidad</title>
 </head>
@@ -83,12 +89,79 @@
         </div>
     </header>
 
+    <section id="skills">
+
+        <h1 class="skillTitle">Development <i class="fa fa-code" aria-hidden="true"></i></h1>
+
+
+        <div class="row text-center dev">
+            <div class="col-lg-3">
+                <i class="devicon-java-plain colored"></i>
+                <i class="fa fa-star" aria-hidden="true"></i>
+            </div>
+            <div class="col-lg-3">
+                <i class="devicon-javascript-plain colored"></i>
+            </div>
+            <div class="col-lg-3">
+                <i class="devicon-html5-plain colored"></i>
+            </div>
+            <div class="col-lg-3">
+                <i class="devicon-css3-plain colored"></i>
+                <i class="devicon-bootstrap-plain colored"></i>
+            </div>
+
+        </div>
+        <div class="row text-center dev">
+            <div class="col-lg-3">
+                <i class="devicon-jquery-plain colored"></i>
+            </div>
+            <div class="col-lg-3">
+                <i class="devicon-nodejs-plain colored"></i>
+            </div>
+            <div class="col-lg-3">
+                <i class="devicon-angularjs-plain colored"></i>
+            </div>
+            <div class="col-lg-3">
+                <i class="devicon-react-original colored"></i>
+            </div>
+
+        </div>
+        <div class="row text-center dev">
+            <div class="col-lg-3">
+                <i class="devicon-php-plain colored"></i>
+            </div>
+            <div class="col-lg-3">
+                <i class="devicon-laravel-plain colored"></i>
+            </div>
+            <div class="col-lg-3">
+                <i class="devicon-mysql-plain colored"></i>
+            </div>
+            <div class="col-lg-3">
+                <i class="devicon-mongodb-plain colored"></i>
+            </div>
+
+        </div>
+
+
+
+
+
+
+    </section>
+
+
+
+    <section id="projects">
+
+    </section>
+
     <section id="aboutsSection">
 
         <div class="container">
 
             <h1 class="about-me-header">About Me</h1>
-            <p>I'm an undergraduate student studying computer science at California State University Northridge, specializing in web engineering.</p>
+            <p>I'm an undergraduate student studying computer science at California State University Northridge, specializing
+                in web engineering.</p>
             <p>I am currently a web developer for my university's Career Center as well as a technical support specialist for
                 our Distance Learning Center.</p>
             <p>My journey into the computer science field started from a final research project for my highschool and after
@@ -104,9 +177,6 @@
 
 
 
-    <section id="projects">   
-        
-    </section>
 
 
     <section id="contact-form">
@@ -131,11 +201,11 @@
 
 
     <script src="js/jquery-3.2.1.min.js"></script>
-    <!--<script>
-    $(window).on('load',function() {
-        $("#loading").fadeOut(2000);
-    });
-    </script>-->
+    <script>
+        $(window).on('load', function () {
+            $("#loading").fadeOut(2000);
+        });
+    </script>
     <script>
         $(function () {
             $('[data-toggle="tooltip"]').tooltip();
@@ -149,6 +219,7 @@
     <script src="js/app.js"></script>
     <script src="js/typed.js"></script>
     <script src="js/typejsLoad.js"></script>
+    <script src="https://cdn.jsdelivr.net/jquery.validation/1.16.0/jquery.validate.js"></script>
     <script src="js/contact.js"></script>
 </body>
 
