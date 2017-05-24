@@ -1,37 +1,136 @@
-html, body {margin:0;padding:0;height:100%;}
+html,
+body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
 
-#aboutMe{
-    margin-top:20px;
-    width: 100%;
-    height: 100%;
-}
-/*consider removing overlay*/
-.overlay {
-    width: 100%;
-    height: 100%;
+
+/* ---- particles.js container ---- */
+
+#particles-js {
     position: absolute;
-    background: rgba(0, 0, 0, 0.4);
-    z-index: -10;
+    display: block;
+    width: 100%;
+    height: 100%;
+    z-index: -20;
+    background-image: url("../img/bg.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    /*margin-top: -5%;*/
+    opacity: 0.7;
+    filter: alpha(opacity=50);
+    /* For IE8 and earlier */
 }
+
+
+/*end of particle js content*/
+
+
+/*start of type cursor css*/
+
+.typed-cursor {
+    opacity: 1;
+    font-weight: 100;
+    -webkit-animation: blink 0.7s infinite;
+    -moz-animation: blink 0.7s infinite;
+    -ms-animation: blink 0.7s infinite;
+    -o-animation: blink 0.7s infinite;
+    animation: blink 0.7s infinite;
+}
+
+@-keyframes blink {
+    0% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@-webkit-keyframes blink {
+    0% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@-moz-keyframes blink {
+    0% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@-ms-keyframes blink {
+    0% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@-o-keyframes blink {
+    0% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+.typed-fade-out {
+    opacity: 0;
+    animation: 0;
+    transition: opacity .25s;
+}
+
+.type-wrap {
+    border-radius: 0px;
+}
+
+
+/*end of type effect css*/
+
+#aboutMe {
+    margin-top: 20px;
+    width: 100%;
+    min-height: 1000px;
+    /*height: 100%;*/
+}
+
+
 .me {
     box-shadow: none;
     border: 4px solid #fff;
     display: block;
     margin: auto;
     margin-top: 90px;
-    height:300px;
-}
-
-.img-circle{
-    width:240px;
+     width: 240px;
     height: 240px;
 }
 
-img {
-    vertical-align: middle;
-}
-
-.myName{
+.myName {
     display: block;
     text-align: center;
     margin-top: 10px;
@@ -39,11 +138,10 @@ img {
     font-size: 80px;
 }
 
-.myName.inner{
+.myName.inner {
     display: block;
     text-align: center;
     margin-top: 0px;
-    
 }
 
 nav {
@@ -53,7 +151,6 @@ nav {
     position: absolute;
     top: 0;
     width: 100%;
-    height: 7%;
 }
 
 nav a {
@@ -65,38 +162,28 @@ nav a {
     color: wheat;
 }
 
-nav a:hover{
+nav a:hover {
     text-decoration: none;
-    color:white;
+    color: white;
 }
 
-.logoCenter{
-    text-align: center;
-    margin-top:25px;
-}
 
-.fa-angle-double-down{
-    font-size:100px;
-    display: inline-block;
-    cursor: pointer;
-    margin-top: 75px;
-    
-}
-
-.personalLinks i{
-    font-size:100px;
+.personalLinks i {
+    font-size: 100px;
     margin-left: 70x;
     margin-right: 50px;
-    margin-top:50px;
-    color:white;
-}
-.personalLinks{
-    text-align: center;
-    padding-left:40px;
+    margin-top: 50px;
+    color: white;
 }
 
-.personalLinks i:hover, .logoCenter i:hover{
-    color:#0088cc;
+.personalLinks {
+    text-align: center;
+    padding-left: 40px;
+}
+
+.personalLinks i:hover,
+.logoCenter i:hover {
+    color: #0088cc;
 }
 
 .hideContent {
@@ -113,7 +200,48 @@ nav a:hover{
     transition: all .7s ease-in-out
 }
 
-.myDesc{
-        text-shadow: 0 0 0.313em #fff, 0 0 0.625em #fff;
+.myDesc {
+    text-shadow: 0 0 0.313em #fff, 0 0 0.625em #fff;
+}
+
+.about-me-header{
+    font-size: 60px;
+    text-align: center;
+}
+
+#aboutsSection p{
+    color:#666666;
+    margin-top: 20px;
+    font-size: 1.5em;
+    text-align: center;
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-top: 1%;
+}
+
+
+#skills{
+    background: #ECECEA;
+    padding-bottom: 20px;
+    
+}
+.skillTitle{
+    font-size: 60px;
+    text-align: center;
+    margin-top:0;
+    padding-top:20px;
+}
+
+.colored{
+    font-size: 150px;
+}
+
+.dev{
+    margin: 50px 0px 50px 0px;
+}
+
+.fa-star{
+    font-size:20px;
+    color:yellow;
 }
 
