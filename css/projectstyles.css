@@ -1,0 +1,76 @@
+
+.da-thumbs {
+	list-style: none;
+	width: 984px;
+	height: 450px;
+	position: relative;
+	margin: 20px auto;
+	padding: 0;
+}
+
+.da-thumbs li {
+	float: left;
+	margin: 5px;
+	/*background: green;*/
+	padding: 8px;
+	position: relative;
+	box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+    width:300px;
+    height:200px;
+}
+
+
+.da-thumbs li a,
+.da-thumbs li a img,
+.da-thumbs li a div.rectangle
+{
+	display: block;
+	position: relative;
+}
+/*.da-thumbs li a div.rectangle{
+    position: relative;
+    display: block;
+}*/
+
+.da-thumbs li a {
+	overflow: hidden;
+}
+.da-thumbs li a div.inner {
+	position: absolute;
+	background: #333;
+	width: 100%;
+	height: 100%;
+}
+
+
+.da-thumbs li a div.inner span {
+	display: block;
+	padding: 10px 0;
+	margin: 40px 20px 20px 20px;
+	text-transform: uppercase;
+	font-weight: normal;
+	color: rgba(255,255,255,0.9);
+	text-shadow: 1px 1px 1px rgba(0,0,0,0.2);
+	border-bottom: 1px solid rgba(255,255,255,0.5);
+	box-shadow: 0 1px 0 rgba(0,0,0,0.1), 0 -10px 0 rgba(255,255,255,0.3);
+}
+
+div.rectangle{
+    width:300px;
+    height: 200px;
+    position: relative;
+    /*background: red;*/
+}
+
+div.rectangle p.title{
+    position: absolute;
+    display: block;
+    bottom: 3px;
+    /*margin:0;*/
+}
+div.rectangle p.title + p{
+    position: absolute;
+    display: block;
+    bottom: 0;
+    margin:0;
+}

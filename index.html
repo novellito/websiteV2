@@ -20,6 +20,7 @@
     <link rel="stylesheet" type="text/css" href="css/contact-form.css">
     <link rel="stylesheet" type="text/css" href="devicon.css">
     <link rel="stylesheet" type="text/css" href="devicon-colors.css">
+    <link rel="stylesheet" type="text/css" href="css/projectStyles.css">
 
     <title>Christian Trinidad</title>
 </head>
@@ -72,8 +73,8 @@
             <i class="devicon-java-plain colored"></i>
             <!--<i class="fa fa-star" aria-hidden="true"></i>-->
             <i class="devicon-javascript-plain colored"></i>
-            
-            
+
+
             <i class="devicon-csharp-plain colored"></i>
         </div>
         <div class="row text-center dev">
@@ -93,18 +94,18 @@
         </div>
         <div class="row text-center dev">
             <h3>Database</h3>
-             <i class="devicon-mysql-plain colored"></i>
-             <i class="devicon-mongodb-plain colored"></i>
+            <i class="devicon-mysql-plain colored"></i>
+            <i class="devicon-mongodb-plain colored"></i>
         </div>
         <div class="row text-center dev">
             <h3>Tools</h3>
-             <i class="devicon-github-plain colored">
+            <i class="devicon-github-plain colored">
                  <img src="img/vscode.png" alt="vscode">
                  <img src="img/intellij.svg" alt="chrome-dev tools">
              </i>
-             
+
         </div>
-      
+
 
     </section>
 
@@ -112,6 +113,82 @@
 
     <section id="projects">
         <h1 class="projectTitle">Projects<i class="fa fa-code" aria-hidden="true"></i></h1>
+
+        <!--<div class="row ">-->
+            <!--<div class="col-lg-4">  -->
+
+            <ul id="da-thumbs" class="da-thumbs">
+                <li>
+                    <a href="x">
+                        <div class="rectangle"> 
+                            <p class="title">App1</p>
+                            <p>My first app</p>
+                        </div>
+                        <div class="inner">
+                            <span>Menu by Simon Jensen</span>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="x">
+                        <div class="rectangle"> 
+                            <p class="title">NoteRoom</p>
+                            <p>A collaborative note taking experience.</p>
+                        </div>
+                        <div class="inner">
+                            <span>Menu by Simon Jensen</span>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="x">
+                        <div class="rectangle"> 
+                            <p class="title">TriniBot</p>
+                            <p>My personal Twitter Bot</p>
+                        </div>
+                        <div class="inner">
+                            <span>Menu by Simon Jensen</span>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="x">
+                        <div class="rectangle"> 
+                            <p class="title">Website v1</p>
+                            <p>My first personal website</p>
+                        </div>
+                        <div class="inner">
+                            <span>Menu by Simon Jensen</span>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="x">
+                        <div class="rectangle"> 
+                            <p class="title">Voitcha</p>
+                            <p>A voice recognized captcha</p>
+                        </div>
+                        <div class="inner">
+                            <span>Menu by Simon Jensen</span>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="x">
+                        <div class="rectangle"> 
+                            <p class="title">App1</p>
+                            <p>My first app</p>
+                        </div>
+                        <div class="inner">
+                            <span>Menu by Simon Jensen</span>
+                        </div>
+                    </a>
+                </li>
+            </ul>
+          
+
+
+
     </section>
 
     <section id="aboutsSection">
@@ -136,6 +213,7 @@
 
 
     <section id="contact-form">
+         <h1 class="projectTitle">Contact Me</h1>
         <form id="contact">
             <div class="container contact">
                 <div class="head">
@@ -176,6 +254,18 @@
     <script src="js/typejsLoad.js"></script>
     <script src="https://cdn.jsdelivr.net/jquery.validation/1.16.0/jquery.validate.js"></script>
     <script src="js/contact.js"></script>
+    <script src="js/projectHover.js"></script>
+
+
+    <script type="text/javascript">
+        $(function () {
+
+            $(' #da-thumbs > li ').each(function () {
+                $(this).hoverdir();
+            });
+
+        });
+    </script>
 </body>
 
 </html>

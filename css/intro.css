@@ -11,7 +11,7 @@ body {
 #particles-js {
     position: absolute;
     width: 100%;
-    min-height: 1000px;
+    height: 1000px; /*said min-height before*/
     z-index: -20;
     background-image: url("../img/bg.jpg");
     background-repeat: no-repeat;
