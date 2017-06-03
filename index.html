@@ -17,7 +17,7 @@
 
     <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.css">
     <link rel="stylesheet" type="text/css" href="css/intro.css">
-    <link rel="stylesheet" type="text/css" href="css/contact-form.css">
+    <!--<link rel="stylesheet" type="text/css" href="css/contact-form.css">-->
     <link rel="stylesheet" type="text/css" href="devicon.css">
     <link rel="stylesheet" type="text/css" href="devicon-colors.css">
     <link rel="stylesheet" type="text/css" href="css/projectStyles.css">
@@ -31,10 +31,10 @@
 
 
     <header id="aboutMe">
-        <nav>
-            <a href="#aboutsSection">About</a>
-            <a href="#projects">Projects</a>
-            <a href="#contact">Contact</a>
+        <nav class="page-header">
+            <a class="page-scroll" href="#aboutsSection">About</a>
+            <a class="page-scroll" href="#projects">Projects</a>
+            <a class="page-scroll" href="#contact">Contact</a>
         </nav>
 
 
@@ -52,24 +52,120 @@
             <h1 class="hideContent myDesc">| Web Developer | Student | Nerd |</h1>
         </h1>
 
-        <div class="personalLinks">
-            <a href="#"><i class="fa fa-github-alt social-ink" aria-hidden="true" 
-            data-toggle="tooltip" data-placement="top" title = "View my GitHub"></i></a>
-            <a href="#"><i class="fa fa-file social-ink" aria-hidden="true"
-            data-toggle="tooltip" data-placement="top" title = "View my Resume"></i></a>
-            <a href="https://www.linkedin.com/in/christian-trinidad07/"><i class="fa fa-linkedin-square social-ink" aria-hidden="true"
-            data-toggle="tooltip" data-placement="top" title = "View my LinkedIn"></i></a>
-        </div>
+        <!--<div class="down">-->
 
+
+        <a class="down page-scroll" href="#aboutsSection">
+            <i class="fa fa-angle-double-down down" aria-hidden="true"></i>
+        </a>
+
+        <!--</div>-->
     </header>
 
-    <section id="skills">
+    <section id="aboutsSection">
 
-        <h1 class="skillTitle">Development <i class="fa fa-code" aria-hidden="true"></i></h1>
+
+        <!--<div class="aboutDiv">
+            <h1 class="about-me-header">About Me</h1>
+        </div>-->
+        <div class="container">
+
+            <div class="row aboutsMe">
+
+                <div class="infoCol fromLeft">
+                    <img class="img-circle" src="img/xtian.png" alt="my picture">
+
+
+                    <div class="personalLinks">
+                        <a href="https://github.com/novellito"><i class="fa fa-github-alt social-ink" aria-hidden="true" 
+                        data-toggle="tooltip" data-placement="top" title = "View my GitHub"></i></a>
+                        <a href="mailto:cntrinidad@gmail.com"><i class="fa fa-envelope-open" aria-hidden="true" data-toggle="tooltip" data-placement="top" title = "Email Me"></i></a>
+                        <!--<a href="#"><i class="fa fa-file social-ink" aria-hidden="true"
+            data-toggle="tooltip" data-placement="top" title = "View my Resume"></i></a>-->
+                        <a href="https://www.linkedin.com/in/christian-trinidad07/"><i class="fa fa-linkedin-square social-ink" aria-hidden="true"
+                        data-toggle="tooltip" data-placement="top" title = "View my LinkedIn"></i></a>
+                    </div>
+                </div>
+
+                <div class="rt-col fromRight">
+
+                    <h3 >About Me</h3>
+                    <p>I am an undergraduate student studying computer science at California State University Northridge, specializing
+                        in web engineering. I'm currently a web developer for my university's Career Center as well as a
+                        technical support specialist for our Distance Learning Center. Outside the world of programming,
+                        I enjoy working out, listening to music, and growing my sneaker collection.</p>
+                    <a href="#x"><button class="resume"><i class="fa fa-download" aria-hidden="true"></i>   Download Resume (PDF)</button></a>
+                </div>
+            </div>
+    
+        </div>
+
+    </section>
+
+    <section id="experience">
 
         <div class="container">
 
-            <div class="row text-center dev">
+            <div class="row aboutsMe">
+
+
+                <div class="infoCol fromTop">
+                    <h1><span>Education</span></h1>
+                </div>
+
+
+                <div class="rt-col fromTop">
+
+                    <h3>California State University Northridge</h3>
+                    <p class="col-desc">BS in Computer Science <span>•</span> May 2018 <span>•</span> Current GPA: 3.52</p>
+                </div>
+
+
+            </div>
+            <div class="row aboutsMe" style="margin:0 auto; width:90%; max-width:1020px;">
+
+
+                <div class="infoCol fromTop">
+                    <h1><span>Work</span></h1>
+                </div>
+
+
+                <div class="rt-col fromBot">
+                    <h3>CSUN Career Center</h3>
+                    <p class="col-desc">Web Developer<span> • </span> April 2017 - Current</p>
+                    <p>I help create content for the schools career center using various web technologies. I also coordinate
+                        with graphic designers to help plan and design layouts for our websites.
+                    </p>
+                </div>
+
+                <div class="infoCol" style="visibility:hidden;">
+                    <h1><span>Work</span></h1>
+                </div>
+
+                <div class="rt-col fromBot">
+                    <h3>CSUN Distance Learning Center </h3>
+                    <p class="col-desc">Web Developer & Technical Support Specialist<span> • </span> April 2017 - Current</p>
+                    <p>I facilitate one on one training sessions with professors regarding school software, provide Quality
+                        Assurance checks of course material to ensure that they are in compliance with the American Disabilities,
+                        as well as upload materials provided by the professors to Moodle, Canvas, and YouTube Act (ADA).
+                    </p>
+                </div>
+
+
+            </div>
+
+        </div>
+
+
+    </section>
+
+    <section id="skills">
+
+        <h1 class="skillTitle">Development </h1>
+
+        <div class="container">
+
+            <div class="row text-center dev fromTop">
                 <h3>Main Technologies</h3>
                 <i class="devicon-java-plain colored"></i>
                 <!--<i class="fa fa-star" aria-hidden="true"></i>-->
@@ -78,7 +174,7 @@
                 <i class="devicon-css3-plain colored"></i>
                 <!--<i class="devicon-csharp-plain colored"></i>-->
             </div>
-            <div class="col-lg-4 text-center dev">
+            <div class="col-lg-4 text-center dev fromLeft">
                 <h3>Frontend</h3>
 
                 <i class="devicon-bootstrap-plain colored"></i>
@@ -86,7 +182,7 @@
                 <i class="devicon-angularjs-plain colored"></i>
                 <i class="devicon-react-original colored"></i>
             </div>
-            <div class="col-lg-4 text-center dev">
+            <div class="col-lg-4 text-center dev fromBot">
                 <h3>Backend</h3>
                 <i class="devicon-nodejs-plain colored"></i>
                 <i class="devicon-php-plain colored"></i>
@@ -94,32 +190,22 @@
                 <i class="devicon-mysql-plain colored"></i>
                 <i class="devicon-mongodb-plain colored"></i>
             </div>
-
-            <div class="col-lg-4 text-center dev">
+            <div class="col-lg-4 text-center dev fromRight">
                 <h3>Tools</h3>
                 <i class="devicon-github-plain colored">
                  <img src="img/vscode.png" alt="vscode">
                  <img src="img/intellij.svg" alt="intellij">
              </i>
-
-
             </div>
-             <h2>Other experience</h2>
-
+            <h2>Other experience</h2>
         </div>
-
     </section>
-
-
 
     <section id="projects">
         <h1 class="projectTitle">Projects<i class="fa fa-code" aria-hidden="true"></i></h1>
-
         <!--fluid when more projects-->
         <div class="container">
-
             <ul id="da-thumbs" class="row da-thumbs">
-
                 <li class="col-lg-6 col-md-6">
                     <a href="x">
                         <div class="rectangle">
@@ -131,7 +217,6 @@
                         </div>
                     </a>
                 </li>
-
                 <li class="col-lg-6 col-md-6">
                     <a href="x">
                         <div class="rectangle">
@@ -143,7 +228,6 @@
                         </div>
                     </a>
                 </li>
-
                 <li class="col-lg-6 col-md-6">
                     <a href="x">
                         <div class="rectangle">
@@ -166,57 +250,23 @@
                         </div>
                     </a>
                 </li>
-
             </ul>
-
-
         </div>
-
-
-    </section>
-
-    <section id="aboutsSection">
-
-        <div class="container-fluid">
-
-            <h1 class="about-me-header">About Me</h1>
-            <p>I'm an undergraduate student studying computer science at California State University Northridge, specializing
-                in web engineering.</p>
-            <p>I am currently a web developer for my university's Career Center as well as a technical support specialist for
-                our Distance Learning Center.</p>
-            <p>My journey into the computer science field started from a final research project for my highschool and after
-                running through countless hours of video tutorials, I had figured out what I wanted to do with my life </p>
-            <p>Everything I know about web development has been self taught and my future goal is to become a senior fullstack
-                developer.
-            </p>
-            <p>Outside the world of programming, I enjoy working out, listening to music, and growing my sneaker collection.</p>
-
-        </div>
-
     </section>
 
 
-    <section id="contact-form">
-        <h1 class="projectTitle">Contact Me</h1>
-        <form id="contact">
-            <div class="container contact">
-                <div class="head">
-                    <h2>Say Hello</h2>
+    <footer id="contact-section">
+        <h2 class="follow">Follow Me On
+
+            <div class="container">
+                <div class="row text-center fromBot">
+                    <a href="https://twitter.com/novellit0" target="_blank"><img src="img/Twitter.svg" alt="twitter"></a hre>
+                    <a href="https://www.facebook.com/christian.n.trinidad" target="_blank"><img src="img/Facebook.svg" alt="facebook"></a href>
+                    <a href="https://www.instagram.com/cnovellito/" target="_blank"> <img src="img/Instagram.svg" alt="instagram"></a hre>
                 </div>
-                <input type="text" name="name" placeholder="Name" /><br />
-                <input type="email" name="email" placeholder="Email" /><br />
-                <textarea type="text" name="message" placeholder="Message"></textarea><br />
-                <div class="message">Message Sent</div>
-                <button id="submit" type="submit">
-      Send!
-    </button>
             </div>
-        </form>
-
-    </section>
-
-
-
+        </h2>
+    </footer>
 
     <script src="js/jquery-3.2.1.min.js"></script>
     <script>
@@ -237,10 +287,20 @@
     <script src="js/typed.js"></script>
     <script src="js/typejsLoad.js"></script>
     <script src="https://cdn.jsdelivr.net/jquery.validation/1.16.0/jquery.validate.js"></script>
-    <script src="js/contact.js"></script>
     <script src="js/projectHover.js"></script>
-
-
+    <script src="js/jquery.easing.min.js"></script>
+    <script src="https://unpkg.com/scrollreveal/dist/scrollreveal.min.js"></script>
+    <script>
+        $(function () {
+            $(document).on('click', 'a.page-scroll', function (event) {
+                var $anchor = $(this);
+                $('html, body').stop().animate({
+                    scrollTop: $($anchor.attr('href')).offset().top
+                }, 1500, 'easeInOutExpo');
+                event.preventDefault();
+            });
+        });
+    </script>
     <script type="text/javascript">
         $(function () {
 
@@ -248,6 +308,54 @@
                 $(this).hoverdir();
             });
 
+        });
+    </script>
+    <script type="text/javascript">
+        (function ($) {
+            $(function () {
+                var scroll = $(document).scrollTop();
+                var headerHeight = $('.page-header').outerHeight();
+
+                $(window).scroll(function () {
+                    var scrolled = $(document).scrollTop();
+                    if (scrolled > headerHeight) {
+                        $('.page-header').addClass('off-canvas');
+                    } else {
+                        $('.page-header').removeClass('off-canvas');
+                    }
+
+                    if (scrolled > scroll) {
+                        $('.page-header').removeClass('fixed');
+                    } else {
+                        $('.page-header').addClass('fixed');
+                    }
+                    scroll = $(document).scrollTop();
+                });
+            });
+        })(jQuery);
+    </script>
+
+    <script>
+        window.sr = ScrollReveal();
+        sr.reveal('.fromTop', {
+            duration: 2000,
+            origin: 'top'
+        });
+        sr.reveal('.fromLeft', {
+            duration: 1500,
+            origin: 'left',
+            distance: '300px',
+            viewFactor: 0.2
+        });
+        sr.reveal('.fromRight', {
+            duration: 1500,
+            origin: 'right',
+            distance: '300px',
+            viewFactor: 0.2
+        });
+        sr.reveal('.fromBot', {
+            duration: 2000,
+            origin: 'bottom'
         });
     </script>
 </body>
