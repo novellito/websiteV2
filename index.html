@@ -4,6 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <!-- Latest compiled and minified CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
@@ -14,13 +15,12 @@
         crossorigin="anonymous">
 
     <link href="https://fonts.googleapis.com/css?family=Space+Mono" rel="stylesheet">
-
     <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.css">
     <link rel="stylesheet" type="text/css" href="css/intro.css">
-    <!--<link rel="stylesheet" type="text/css" href="css/contact-form.css">-->
     <link rel="stylesheet" type="text/css" href="devicon.css">
     <link rel="stylesheet" type="text/css" href="devicon-colors.css">
     <link rel="stylesheet" type="text/css" href="css/projectStyles.css">
+    <link rel="stylesheet" type="text/css" href="css/media.css">
 
     <title>Christian Trinidad</title>
 </head>
@@ -28,7 +28,6 @@
 <body>
 
     <div id="particles-js"></div>
-
 
     <header id="aboutMe">
         <nav class="page-header">
@@ -45,33 +44,19 @@
 
 
         <h1 class="myName inner">I'm
-            <!--<div id="typed-strings" style="display: none;">
-                <h1 class="myName">My name is Christian Trinidad</h1>
-            </div>-->
             <span id="typed"></span>
             <h1 class="hideContent myDesc">| Web Developer | Student | Nerd |</h1>
         </h1>
-
-        <!--<div class="down">-->
-
 
         <a class="down page-scroll" href="#aboutsSection">
             <i class="fa fa-angle-double-down down" aria-hidden="true"></i>
         </a>
 
-        <!--</div>-->
     </header>
 
     <section id="aboutsSection">
-
-
-        <!--<div class="aboutDiv">
-            <h1 class="about-me-header">About Me</h1>
-        </div>-->
         <div class="container">
-
             <div class="row aboutsMe">
-
                 <div class="infoCol fromLeft">
                     <img class="img-circle" src="img/xtian.png" alt="my picture">
 
@@ -87,17 +72,29 @@
                     </div>
                 </div>
 
-                <div class="rt-col fromRight">
+                <div class="rt-col ">
 
-                    <h3 >About Me</h3>
-                    <p>I am an undergraduate student studying computer science at California State University Northridge, specializing
+                    <h3 class="fromRight">About Me</h3>
+                    <p class="fromRight">I am an undergraduate student studying computer science at California State University Northridge, specializing
                         in web engineering. I'm currently a web developer for my university's Career Center as well as a
                         technical support specialist for our Distance Learning Center. Outside the world of programming,
                         I enjoy working out, listening to music, and growing my sneaker collection.</p>
-                    <a href="#x"><button class="resume"><i class="fa fa-download" aria-hidden="true"></i>   Download Resume (PDF)</button></a>
+                    
+                    
+                      
+                    <a href="#x"><button class="resume fromRight"><i class="fa fa-download" aria-hidden="true"></i>   Download Resume (PDF)</button></a>
                 </div>
+                 <div class="personalLinks mini">
+                        <a href="https://github.com/novellito"><i class="fa fa-github-alt social-ink" aria-hidden="true" 
+                        data-toggle="tooltip" data-placement="top" title = "View my GitHub"></i></a>
+                        <a href="mailto:cntrinidad@gmail.com"><i class="fa fa-envelope-open" aria-hidden="true" data-toggle="tooltip" data-placement="top" title = "Email Me"></i></a>
+                        <!--<a href="#"><i class="fa fa-file social-ink" aria-hidden="true"
+            data-toggle="tooltip" data-placement="top" title = "View my Resume"></i></a>-->
+                        <a href="https://www.linkedin.com/in/christian-trinidad07/"><i class="fa fa-linkedin-square social-ink" aria-hidden="true"
+                        data-toggle="tooltip" data-placement="top" title = "View my LinkedIn"></i></a>
+                    </div>
             </div>
-    
+
         </div>
 
     </section>
@@ -106,29 +103,23 @@
 
         <div class="container">
 
-            <div class="row aboutsMe">
+            <div class="row aboutsMe fromTop">
 
-
-                <div class="infoCol fromTop">
+                <div class="infoCol">
                     <h1><span>Education</span></h1>
                 </div>
 
-
-                <div class="rt-col fromTop">
+                <div class="rt-col md">
 
                     <h3>California State University Northridge</h3>
                     <p class="col-desc">BS in Computer Science <span>•</span> May 2018 <span>•</span> Current GPA: 3.52</p>
                 </div>
-
-
             </div>
             <div class="row aboutsMe" style="margin:0 auto; width:90%; max-width:1020px;">
-
 
                 <div class="infoCol fromTop">
                     <h1><span>Work</span></h1>
                 </div>
-
 
                 <div class="rt-col fromBot">
                     <h3>CSUN Career Center</h3>
@@ -146,16 +137,12 @@
                     <h3>CSUN Distance Learning Center </h3>
                     <p class="col-desc">Web Developer & Technical Support Specialist<span> • </span> April 2017 - Current</p>
                     <p>I facilitate one on one training sessions with professors regarding school software, provide Quality
-                        Assurance checks of course material to ensure that they are in compliance with the American Disabilities,
-                        as well as upload materials provided by the professors to Moodle, Canvas, and YouTube Act (ADA).
+                        Assurance checks of course material to ensure that they are in compliance with the American Disabilities Act (ADA).,
+                        as well as upload materials provided by the professors to Moodle, Canvas, and YouTube.
                     </p>
                 </div>
-
-
             </div>
-
         </div>
-
 
     </section>
 
@@ -168,7 +155,6 @@
             <div class="row text-center dev fromTop">
                 <h3>Main Technologies</h3>
                 <i class="devicon-java-plain colored"></i>
-                <!--<i class="fa fa-star" aria-hidden="true"></i>-->
                 <i class="devicon-javascript-plain colored"></i>
                 <i class="devicon-html5-plain colored"></i>
                 <i class="devicon-css3-plain colored"></i>
@@ -201,12 +187,15 @@
         </div>
     </section>
 
+
+    <div class="wrapper">
+
     <section id="projects">
         <h1 class="projectTitle">Projects<i class="fa fa-code" aria-hidden="true"></i></h1>
         <!--fluid when more projects-->
         <div class="container">
             <ul id="da-thumbs" class="row da-thumbs">
-                <li class="col-lg-6 col-md-6">
+                <li class="col-lg-6 col-md-2">
                     <a href="x">
                         <div class="rectangle">
                             <p class="title">NoteRoom</p>
@@ -217,7 +206,7 @@
                         </div>
                     </a>
                 </li>
-                <li class="col-lg-6 col-md-6">
+                <li class="col-lg-6 col-md-2">
                     <a href="x">
                         <div class="rectangle">
                             <p class="title">TriniBot</p>
@@ -228,7 +217,7 @@
                         </div>
                     </a>
                 </li>
-                <li class="col-lg-6 col-md-6">
+                <li class="col-lg-6 col-md-2">
                     <a href="x">
                         <div class="rectangle">
                             <p class="title">Website v1</p>
@@ -239,7 +228,7 @@
                         </div>
                     </a>
                 </li>
-                <li class="col-lg-6 col-md-6">
+                <li class="col-lg-6 col-md-2">
                     <a href="x">
                         <div class="rectangle">
                             <p class="title">Voitcha</p>
@@ -257,7 +246,6 @@
 
     <footer id="contact-section">
         <h2 class="follow">Follow Me On
-
             <div class="container">
                 <div class="row text-center fromBot">
                     <a href="https://twitter.com/novellit0" target="_blank"><img src="img/Twitter.svg" alt="twitter"></a hre>
@@ -268,18 +256,8 @@
         </h2>
     </footer>
 
+    </div>
     <script src="js/jquery-3.2.1.min.js"></script>
-    <script>
-        $(window).on('load', function () {
-            $("#loading").fadeOut(2000);
-        });
-    </script>
-    <script>
-        $(function () {
-            $('[data-toggle="tooltip"]').tooltip();
-        });
-    </script>
-
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
         crossorigin="anonymous"></script>
     <script src="js/particles.js"></script>
@@ -290,74 +268,7 @@
     <script src="js/projectHover.js"></script>
     <script src="js/jquery.easing.min.js"></script>
     <script src="https://unpkg.com/scrollreveal/dist/scrollreveal.min.js"></script>
-    <script>
-        $(function () {
-            $(document).on('click', 'a.page-scroll', function (event) {
-                var $anchor = $(this);
-                $('html, body').stop().animate({
-                    scrollTop: $($anchor.attr('href')).offset().top
-                }, 1500, 'easeInOutExpo');
-                event.preventDefault();
-            });
-        });
-    </script>
-    <script type="text/javascript">
-        $(function () {
-
-            $(' #da-thumbs > li ').each(function () {
-                $(this).hoverdir();
-            });
-
-        });
-    </script>
-    <script type="text/javascript">
-        (function ($) {
-            $(function () {
-                var scroll = $(document).scrollTop();
-                var headerHeight = $('.page-header').outerHeight();
-
-                $(window).scroll(function () {
-                    var scrolled = $(document).scrollTop();
-                    if (scrolled > headerHeight) {
-                        $('.page-header').addClass('off-canvas');
-                    } else {
-                        $('.page-header').removeClass('off-canvas');
-                    }
-
-                    if (scrolled > scroll) {
-                        $('.page-header').removeClass('fixed');
-                    } else {
-                        $('.page-header').addClass('fixed');
-                    }
-                    scroll = $(document).scrollTop();
-                });
-            });
-        })(jQuery);
-    </script>
-
-    <script>
-        window.sr = ScrollReveal();
-        sr.reveal('.fromTop', {
-            duration: 2000,
-            origin: 'top'
-        });
-        sr.reveal('.fromLeft', {
-            duration: 1500,
-            origin: 'left',
-            distance: '300px',
-            viewFactor: 0.2
-        });
-        sr.reveal('.fromRight', {
-            duration: 1500,
-            origin: 'right',
-            distance: '300px',
-            viewFactor: 0.2
-        });
-        sr.reveal('.fromBot', {
-            duration: 2000,
-            origin: 'bottom'
-        });
-    </script>
+    <script src="js/master.js"></script>
 </body>
 
 </html>

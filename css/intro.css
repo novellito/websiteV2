@@ -3,11 +3,13 @@ body {
     margin: 0;
     padding: 0;
     height: 100%;
-    
+    width: 100%;
 }
-body{
+
+/*body {
     overflow-x: hidden;
-}
+}*/
+
 * {
     box-sizing: border-box;
 }
@@ -132,7 +134,7 @@ body{
     border-radius: 50%;
     display: block;
     margin: auto;
-    margin-top: 10%;
+    margin-top: 15%;
     width: 240px;
     height: 240px;
 }
@@ -168,6 +170,11 @@ nav a {
     font-size: 25px;
     color: white;
     z-index: 10;
+    text-decoration: none;
+}
+
+nav a:visited {
+    color: white;
 }
 
 nav a:hover {
@@ -175,10 +182,13 @@ nav a:hover {
     color: #B4E0FF;
 }
 
-nav a:link,
-nav a:visited {
+nav a:active {
     text-decoration: none;
     color: white;
+}
+
+nav a:focus {
+    text-decoration: none;
 }
 
 .page-header {
@@ -200,23 +210,23 @@ nav a:visited {
     z-index: 10;
 }
 
-.personalLinks a{
-    /*width:50px;
-    height:60px;*/
+.personalLinks a {
     display: inline-block;
 }
-.personalLinks i {
+
+.personalLinks i,
+.personalLinks.mini i {
     font-size: 40px;
-    margin-top: 4%;
     margin-right: 25px;
     color: white;
 }
 
 .personalLinks {
-    margin: 0 -4%;
+    margin: 7% -4%;
 }
 
-.personalLinks i:hover{
+.personalLinks i:hover,
+.personalLinks.mini i:hover {
     color: #00A0FF;
     transition: .3s;
 }
@@ -311,6 +321,11 @@ nav a:visited {
 
 #projects {
     height: 100%;
+}
+
+#projects .container {
+    padding-top: 40px;
+    padding-bottom:40px;
 }
 
 #contact-section {
@@ -415,8 +430,8 @@ nav a:visited {
     margin-bottom: 0;
 }
 
-.follow a:hover{
-    opacity:.7;
+.follow a:hover {
+    opacity: .7;
 }
 
 .down {
@@ -432,6 +447,10 @@ nav a:visited {
     text-decoration: none;
 }
 
-.down:hover{
-    color:#B4E0FF;
+.down:hover {
+    color: #B4E0FF;
+}
+
+.personalLinks.mini {
+    display: none;
 }

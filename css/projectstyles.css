@@ -1,20 +1,17 @@
 .da-thumbs {
     list-style: none;
     position: relative;
-   /* left: 5%; position projects*/
 }
 
 .da-thumbs li {
     float: left;
 	margin: 20px 20px 20px 20px;
-    /*margin: 5px;*/
     background: green;
     padding: 8px;
     position: relative;
     box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
     width: 500px;
     height: 300px;
-    /*margin: 0 auto;*/
 }
 
 .da-thumbs li a,
@@ -50,14 +47,12 @@ div.rectangle {
     width: 500px;
     height: 280px;
     position: relative;
-    /*background: red;*/
 }
 
 div.rectangle p.title {
     position: absolute;
     display: block;
     bottom: 3px;
-    /*margin:0;*/
 }
 
 div.rectangle p.title+p {
@@ -67,7 +62,6 @@ div.rectangle p.title+p {
     margin: 0;
 }
 
-
-/*#projects .row{
-	margin: 0px 40px 10px 40px;
-}*/
+#aboutsSection .rt-col h3{
+    color:white;
+}
